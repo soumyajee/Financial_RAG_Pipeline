@@ -1,0 +1,82 @@
+
+=== Query Log - 2025-05-26 20:23:09 ===
+
+Query: What does Apple's latest earnings report say about their revenue?
+Response:
+Document Insights:
+ Products $ 68,714 $ 66,886 $ 166,674 $ 163,344 Net sales $ 95,359 $ 90,753 $ 219,659 $ 210,328 (1) Cost of sales: Products 44,030 42,424 103,477 100,864 Services 26,645 23,867 52,985 46,984 Total net sales $95,359  ï¿½90,753 ï¿½91,000 ï¿½99,000 less than the net sales of the iPhone, iPad, Mac and iPad .
+Sources:
+- Document: FY25_Q2_Consolidated_Financial_Statements.pdf
+  Excerpt: Apple Inc. CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS (Unaudited) (In millions, except number o...
+- Document: FY25_Q2_Consolidated_Financial_Statements.pdf
+  Excerpt: Common stock and additional paid-in capital, $0.00001 par value: 50,400,000 shares authorized; 14,93...
+- Document: FY25_Q2_Consolidated_Financial_Statements.pdf
+  Excerpt: 16,885 Total net sales $ 95,359 $ 90,753 $ 219,659 $ 210,328 (1) Net sales by category: iPhone $ 46,...
+--------------------------------------------------------------------------------
+
+Query: What are the key points in Apple's 2024 10-K filing?
+Response:
+Document Insights:
+ Apple Inc. reports all non-Google businesses collectively as Other Bets . Understanding Alphabetï¿½s Financial Results is a collection of businesses . We report Google in two segments, Google Services and Google Cloud .
+Sources:
+- Document: FY25_Q2_Consolidated_Financial_Statements.pdf
+  Excerpt: Common stock and additional paid-in capital, $0.00001 par value: 50,400,000 shares authorized; 14,93...
+- Document: FY25_Q2_Consolidated_Financial_Statements.pdf
+  Excerpt: Apple Inc. CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS (Unaudited) (In millions, except number o...
+- Document: goog-10-q-q1-2025.pdf
+  Excerpt: Annual Report on Form 10-K for the fiscal year ended December 31, 2024 , including Part I, Item 1A "...
+--------------------------------------------------------------------------------
+
+Query: How does the financial research paper describe market trends?
+Response:
+Document Insights:
+ Our past results may not be indicative of our future performance, and our financial results may differ from historical trends . We may experience direct and indirect effects on our business, operations, and financial results .
+Sources:
+- Document: goog-10-q-q1-2025.pdf
+  Excerpt: rates; ï¿½changes in pricing, such as those resulting from changes in fee structures, discounts, and c...
+- Document: goog-10-q-q1-2025.pdf
+  Excerpt: items have been, and may continue to be, affected by factors in addition to the general factors desc...
+- Document: goog-10-q-q1-2025.pdf
+  Excerpt: trade and the macroeconomic environment. As a result of volatility in international trade and financ...
+--------------------------------------------------------------------------------
+
+=== Query Log - 2025-05-27 19:01:19 ===
+
+Query: What does Apple's latest earnings report say about their revenue?
+Response:
+Document Insights:
+ Products $ 68,714 $ 66,886 $ 166,674 $ 163,344 Net sales $ 95,359 $ 90,753 $ 219,659 $ 210,328 (1) Cost of sales: Products 44,030 42,424 103,477 100,864 Services 26,645 23,867 52,985 46,984 Total net sales $95,359   90,753  91,000  99,000 less than the net sales of the iPhone, iPad, Mac and iPad .
+Sources:
+- Document: FY25_Q2_Consolidated_Financial_Statements.pdf
+  Excerpt: Apple Inc. CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS (Unaudited) (In millions, except number o...
+- Document: FY25_Q2_Consolidated_Financial_Statements.pdf
+  Excerpt: Common stock and additional paid-in capital, $0.00001 par value: 50,400,000 shares authorized; 14,93...
+- Document: FY25_Q2_Consolidated_Financial_Statements.pdf
+  Excerpt: 16,885 Total net sales $ 95,359 $ 90,753 $ 219,659 $ 210,328 (1) Net sales by category: iPhone $ 46,...
+--------------------------------------------------------------------------------
+
+Query: What are the key points in Apple's 2024 10-K filing?
+Response:
+Document Insights:
+ Apple Inc. reports all non-Google businesses collectively as Other Bets . Understanding Alphabet’s Financial Results is a collection of businesses . We report Google in two segments, Google Services and Google Cloud .
+Sources:
+- Document: FY25_Q2_Consolidated_Financial_Statements.pdf
+  Excerpt: Common stock and additional paid-in capital, $0.00001 par value: 50,400,000 shares authorized; 14,93...
+- Document: FY25_Q2_Consolidated_Financial_Statements.pdf
+  Excerpt: Apple Inc. CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS (Unaudited) (In millions, except number o...
+- Document: goog-10-q-q1-2025.pdf
+  Excerpt: Annual Report on Form 10-K for the fiscal year ended December 31, 2024 , including Part I, Item 1A "...
+--------------------------------------------------------------------------------
+
+Query: How does the financial research paper describe market trends?
+Response:
+Document Insights:
+ Our past results may not be indicative of our future performance, and our financial results may differ from historical trends . We may experience direct and indirect effects on our business, operations, and financial results .
+Sources:
+- Document: goog-10-q-q1-2025.pdf
+  Excerpt: rates; •changes in pricing, such as those resulting from changes in fee structures, discounts, and c...
+- Document: goog-10-q-q1-2025.pdf
+  Excerpt: items have been, and may continue to be, affected by factors in addition to the general factors desc...
+- Document: goog-10-q-q1-2025.pdf
+  Excerpt: trade and the macroeconomic environment. As a result of volatility in international trade and financ...
+--------------------------------------------------------------------------------

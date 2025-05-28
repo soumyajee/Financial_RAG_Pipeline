@@ -1,0 +1,290 @@
+2025-05-27 19:08:39,759 - INFO - Use pytorch device_name: cpu
+2025-05-27 19:08:39,759 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-27 19:08:47,898 - INFO - Loaded FAISS index and metadata from faiss_index
+2025-05-27 19:08:47,914 - ERROR - Form data requires "python-multipart" to be installed. 
+You can install "python-multipart" with: 
+
+pip install python-multipart
+
+2025-05-27 19:09:23,880 - INFO - Use pytorch device_name: cpu
+2025-05-27 19:09:23,880 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-27 19:09:32,148 - INFO - Loaded FAISS index and metadata from faiss_index
+2025-05-27 19:09:59,471 - INFO - Use pytorch device_name: cpu
+2025-05-27 19:09:59,471 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-27 19:10:08,859 - INFO - Loaded FAISS index and metadata from faiss_index
+2025-05-27 19:11:02,733 - INFO - Market data retrieved for AAPL: {'close': 195.33999633789062, 'sma_50': 195.50966278076172, 'ema_20': 195.44857856128868, 'rsi': 45.26712492262563, 'volatility': 0.058662756235232434}
+2025-05-27 19:12:13,348 - INFO - Saved FAISS index and metadata to faiss_index
+2025-05-27 19:12:13,352 - INFO - Processed and added document Documents\goog-10-q-q1-2025.pdf with 269 chunks
+2025-05-27 19:12:13,352 - INFO - Document goog-10-q-q1-2025.pdf uploaded and processed in 17.79 seconds
+2025-05-27 19:12:26,003 - INFO - Saved FAISS index and metadata to faiss_index
+2025-05-27 19:12:26,003 - INFO - Processed and added document Documents\FY25_Q2_Consolidated_Financial_Statements.pdf with 11 chunks
+2025-05-27 19:12:26,003 - INFO - Document FY25_Q2_Consolidated_Financial_Statements.pdf uploaded and processed in 1.46 seconds
+2025-05-27 19:17:26,142 - INFO - Query processed: What does Apple's latest earnings report say about their revenue in 10.64 seconds
+2025-05-27 19:26:28,676 - INFO - Use pytorch device_name: cpu
+2025-05-27 19:26:28,676 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-27 19:26:38,815 - INFO - Loaded FAISS index and metadata from faiss_index
+2025-05-27 19:27:40,816 - WARNING - No data found for symbol ETC-USD
+2025-05-27 19:27:40,816 - ERROR - Error fetching market data for ETC-USD: 404: No market data found for symbol: ETC-USD
+2025-05-27 19:27:53,973 - INFO - Market data retrieved for AAPL: {'close': 195.33999633789062, 'sma_50': 195.50966278076172, 'ema_20': 195.44857856128868, 'rsi': 45.26712492262563, 'volatility': 0.058662756235232434}
+2025-05-27 19:28:16,168 - INFO - Saved FAISS index and metadata to faiss_index
+2025-05-27 19:28:16,168 - INFO - Processed and added document Documents\FY25_Q2_Consolidated_Financial_Statements.pdf with 4 chunks
+2025-05-27 19:28:16,168 - INFO - Document FY25_Q2_Consolidated_Financial_Statements.pdf uploaded and processed in 3.35 seconds
+2025-05-27 19:28:22,427 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,427 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,427 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,427 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,427 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,427 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,427 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,427 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,427 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,427 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,427 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,427 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,427 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,427 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,437 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,437 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,440 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,440 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,440 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,440 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,440 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,440 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,440 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,440 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,440 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,440 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,440 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,440 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,440 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,453 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,454 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,458 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,458 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,460 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,462 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,464 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,465 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,465 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,465 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,465 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,469 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,470 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,473 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,475 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,478 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,478 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,480 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,482 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:22,482 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,648 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,648 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,648 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,648 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,648 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,648 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,648 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,648 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,648 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,648 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,648 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,648 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,648 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,648 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,648 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,648 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,648 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,648 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,648 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,648 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,648 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,648 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,648 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,652 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,652 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,652 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,652 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,652 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,652 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,652 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,652 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,652 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,652 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,652 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,652 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,652 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,652 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,652 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,652 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,652 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,652 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,652 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,652 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,652 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,652 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,652 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,652 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,652 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:39,656 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 19:28:50,062 - INFO - Saved FAISS index and metadata to faiss_index
+2025-05-27 19:28:50,062 - INFO - Processed and added document Documents\goog-10-q-q1-2025.pdf with 1 chunks
+2025-05-27 19:28:50,062 - INFO - Document goog-10-q-q1-2025.pdf uploaded and processed in 27.66 seconds
+2025-05-27 19:29:19,837 - WARNING - Missing page_number for chunk index 6 from FY25_Q2_Consolidated_Financial_Statements.pdf
+2025-05-27 19:29:27,801 - INFO - Query processed: What does Apple's latest earnings report say about their revenue in 8.03 seconds
+2025-05-27 19:30:25,817 - WARNING - Missing page_number for chunk index 6 from FY25_Q2_Consolidated_Financial_Statements.pdf
+2025-05-27 19:30:38,705 - INFO - Query processed: What are the key points in Apple's 2024 10-K filing in 12.94 seconds
+2025-05-27 19:32:19,170 - WARNING - Missing page_number for chunk index 178 from goog-10-q-q1-2025.pdf
+2025-05-27 19:32:24,969 - INFO - Query processed: How does the financial research paper describe market trends in 5.85 seconds
+2025-05-27 19:42:37,846 - WARNING - Missing page_number for chunk index 220 from goog-10-q-q1-2025.pdf
+2025-05-27 19:42:43,271 - INFO - Query processed: What is BTC-USD’s volatility in 5.47 seconds
+2025-05-27 19:43:54,887 - WARNING - Missing page_number for chunk index 175 from goog-10-q-q1-2025.pdf
+2025-05-27 19:44:00,921 - INFO - Query processed: Compare GOOGL’s stock performance with its earnings. in 6.07 seconds
+2025-05-27 19:44:50,075 - WARNING - Missing page_number for chunk index 120 from goog-10-q-q1-2025.pdf
+2025-05-27 19:44:59,423 - INFO - Query processed: What is AAPL Volatality in 9.39 seconds
+2025-05-27 20:12:13,985 - INFO - Use pytorch device_name: cpu
+2025-05-27 20:12:13,985 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-27 20:12:50,567 - INFO - Loaded FAISS index and metadata from faiss_index
+2025-05-27 20:16:27,956 - INFO - Market data retrieved for AAPL: {'close': 195.33999633789062, 'sma_50': 195.50966278076172, 'ema_20': 195.44857856128868, 'rsi': 45.26712492262563, 'volatility': 0.058662756235232434}
+2025-05-27 20:16:56,247 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,252 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,256 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,260 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,265 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,269 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,272 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,273 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,277 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,277 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,281 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,281 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,286 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,286 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,290 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,290 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,294 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,294 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,298 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,298 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,302 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,302 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,307 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,307 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,311 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,311 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,315 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,315 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,319 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,319 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,323 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,325 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,328 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,330 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,332 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,334 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,336 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,336 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,340 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,342 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,344 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,346 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,348 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,350 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,352 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,356 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,361 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,365 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:16:56,369 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,342 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,344 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,344 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,344 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,344 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,344 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,344 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,348 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,348 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,348 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,348 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,348 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,348 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,348 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,348 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,348 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,348 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,348 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,348 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,348 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,348 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,348 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,348 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,348 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,348 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,348 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,348 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,348 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,348 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,348 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,348 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,348 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,348 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,348 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,348 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,361 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,361 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,361 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,361 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,361 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,361 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,361 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,361 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,361 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,361 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,361 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,361 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,361 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:38,361 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-27 20:17:57,784 - INFO - Saved FAISS index and metadata to faiss_index
+2025-05-27 20:17:57,786 - INFO - Processed and added document Documents\goog-10-q-q1-2025.pdf with 1 chunks
+2025-05-27 20:17:57,786 - INFO - Document goog-10-q-q1-2025.pdf uploaded and processed in 61.62 seconds
+2025-05-27 20:18:07,993 - INFO - Saved FAISS index and metadata to faiss_index
+2025-05-27 20:18:07,993 - INFO - Processed and added document Documents\FY25_Q2_Consolidated_Financial_Statements.pdf with 4 chunks
+2025-05-27 20:18:07,993 - INFO - Document FY25_Q2_Consolidated_Financial_Statements.pdf uploaded and processed in 7.92 seconds
+2025-05-27 20:18:31,089 - ERROR - Error uploading document goog-10-q-q1-2025.pdf: 400: Document goog-10-q-q1-2025.pdf already processed
+2025-05-27 20:18:55,183 - ERROR - Error uploading document FY25_Q2_Consolidated_Financial_Statements.pdf: 400: Document FY25_Q2_Consolidated_Financial_Statements.pdf already processed
+2025-05-27 20:19:37,637 - WARNING - Missing page_number for chunk index 6 from FY25_Q2_Consolidated_Financial_Statements.pdf
+2025-05-27 20:19:49,878 - INFO - Query processed: what is Apple's latest earnings report revenue in 12.36 seconds
+2025-05-27 20:20:40,213 - INFO - Query processed: How does the financial research paper describe market trends in 10.01 seconds
+2025-05-28 19:23:08,402 - INFO - Use pytorch device_name: cpu
+2025-05-28 19:23:08,402 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-28 19:23:35,906 - INFO - Loaded FAISS index and metadata from faiss_index
+2025-05-28 19:31:18,748 - INFO - Market data retrieved for AAPL: {'close': 195.33999633789062, 'sma_50': 195.50966278076172, 'ema_20': 195.44857856128868, 'rsi': 45.26712492262563, 'volatility': 0.058662756235232434}
+2025-05-28 19:31:19,422 - INFO - Market data retrieved for AAPL: {'close': 195.33999633789062, 'sma_50': 195.50966278076172, 'ema_20': 195.44857856128868, 'rsi': 45.26712492262563, 'volatility': 0.058662756235232434}
+2025-05-28 19:31:19,537 - INFO - Market data retrieved for AAPL: {'close': 195.33999633789062, 'sma_50': 195.50966278076172, 'ema_20': 195.44857856128868, 'rsi': 45.26712492262563, 'volatility': 0.058662756235232434}
+2025-05-28 19:31:20,283 - INFO - Market data retrieved for AAPL: {'close': 195.33999633789062, 'sma_50': 195.50966278076172, 'ema_20': 195.44857856128868, 'rsi': 45.26712492262563, 'volatility': 0.058662756235232434}
+2025-05-28 19:31:25,147 - INFO - Market data retrieved for AAPL: {'close': 195.33999633789062, 'sma_50': 195.50966278076172, 'ema_20': 195.44857856128868, 'rsi': 45.26712492262563, 'volatility': 0.058662756235232434}
+2025-05-28 19:31:25,443 - INFO - Market data retrieved for AAPL: {'close': 195.33999633789062, 'sma_50': 195.50966278076172, 'ema_20': 195.44857856128868, 'rsi': 45.26712492262563, 'volatility': 0.058662756235232434}
+2025-05-28 19:31:25,514 - INFO - Market data retrieved for AAPL: {'close': 195.33999633789062, 'sma_50': 195.50966278076172, 'ema_20': 195.44857856128868, 'rsi': 45.26712492262563, 'volatility': 0.058662756235232434}
+2025-05-28 19:31:26,731 - INFO - Market data retrieved for AAPL: {'close': 195.33999633789062, 'sma_50': 195.50966278076172, 'ema_20': 195.44857856128868, 'rsi': 45.26712492262563, 'volatility': 0.058662756235232434}
+2025-05-28 19:31:30,128 - INFO - Market data retrieved for AAPL: {'close': 195.33999633789062, 'sma_50': 195.50966278076172, 'ema_20': 195.44857856128868, 'rsi': 45.26712492262563, 'volatility': 0.058662756235232434}
+2025-05-28 19:31:33,758 - INFO - Market data retrieved for AAPL: {'close': 195.33999633789062, 'sma_50': 195.50966278076172, 'ema_20': 195.44857856128868, 'rsi': 45.26712492262563, 'volatility': 0.058662756235232434}
+2025-05-28 19:31:33,780 - WARNING - Rate limit exceeded for 127.0.0.1 on /market-data/AAPL
+2025-05-28 19:31:35,007 - WARNING - Rate limit exceeded for 127.0.0.1 on /market-data/AAPL
+2025-05-28 19:31:35,349 - WARNING - Rate limit exceeded for 127.0.0.1 on /market-data/AAPL
+2025-05-28 19:31:40,379 - WARNING - Rate limit exceeded for 127.0.0.1 on /market-data/AAPL
+2025-05-28 19:31:40,437 - WARNING - Rate limit exceeded for 127.0.0.1 on /market-data/AAPL
+2025-05-28 19:31:40,478 - WARNING - Rate limit exceeded for 127.0.0.1 on /market-data/AAPL
+2025-05-28 19:31:41,250 - WARNING - Rate limit exceeded for 127.0.0.1 on /market-data/AAPL
+2025-05-28 19:31:45,202 - WARNING - Rate limit exceeded for 127.0.0.1 on /market-data/AAPL
+2025-05-28 19:31:47,988 - WARNING - Rate limit exceeded for 127.0.0.1 on /market-data/AAPL
+2025-05-28 19:31:47,990 - WARNING - Rate limit exceeded for 127.0.0.1 on /market-data/AAPL
+2025-05-28 19:37:03,612 - INFO - Use pytorch device_name: cpu
+2025-05-28 19:37:03,612 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-28 19:37:15,905 - INFO - Loaded FAISS index and metadata from faiss_index
+2025-05-28 19:38:14,000 - INFO - Market data retrieved for AAPL: {'close': 195.33999633789062, 'sma_50': 195.50966278076172, 'ema_20': 195.44857856128868, 'rsi': 45.26712492262563, 'volatility': 0.058662756235232434}
+2025-05-28 19:41:23,723 - INFO - Market data retrieved for AAPL: {'close': 195.33999633789062, 'sma_50': 195.50966278076172, 'ema_20': 195.44857856128868, 'rsi': 45.26712492262563, 'volatility': 0.058662756235232434}
+2025-05-28 19:41:29,455 - INFO - Market data retrieved for AAPL: {'close': 195.33999633789062, 'sma_50': 195.50966278076172, 'ema_20': 195.44857856128868, 'rsi': 45.26712492262563, 'volatility': 0.058662756235232434}
+2025-05-28 19:41:48,539 - INFO - Saved FAISS index and metadata to faiss_index
+2025-05-28 19:41:48,539 - INFO - Processed and added document Documents\FY25_Q2_Consolidated_Financial_Statements.pdf with 4 chunks
+2025-05-28 19:41:48,539 - INFO - Document FY25_Q2_Consolidated_Financial_Statements.pdf uploaded and processed in 4.27 seconds
+2025-05-28 19:42:25,225 - INFO - Query processed: What does Apple's latest earnings report say about their revenue in 10.18 seconds
