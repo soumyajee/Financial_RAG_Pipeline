@@ -9,20 +9,19 @@ from typing import List, Dict
 import pickle
 from datetime import datetime
 
-# Initialize embedding model (free Hugging Face model)
+# Initialize embedding model
 embedder = SentenceTransformer('all-MiniLM-L6-v2')
 
-# Initialize LLM (free Hugging Face model for summarization)
+# Initialize summarization model
 summarizer = pipeline("summarization", model="sshleifer/distilbart-cnn-12-6")
 
-# Class for financial data database
+# Database interface
 class FinancialDataDB:
     def __init__(self, db_path: str = "market_data.db"):
         self.db_path = db_path
         self.conn = sqlite3.connect(self.db_path)
 
     def get_stock_data(self, symbol: str) -> Dict:
-        """Fetch the latest data for a given symbol from the database."""
         try:
             cursor = self.conn.cursor()
             cursor.execute("""
@@ -51,21 +50,19 @@ class FinancialDataDB:
     def __del__(self):
         self.conn.close()
 
+# RAG System
 class RAGApplication:
-    def __init__(self, documents_dir: str = "Documents", faiss_index_dir: str = "faiss_index"):
-        """Initialize the RAG system with a directory of financial documents and FAISS index directory."""
+    def __init__(self, documents_dir="Documents", faiss_index_dir="faiss_index"):
         self.documents_dir = documents_dir
         self.faiss_index_dir = faiss_index_dir
-        self.embedding_dim = 384  # Dimension of embeddings from all-MiniLM-L6-v2
+        self.embedding_dim = 384
         self.index = None
         self.chunks = []
         self.metadata = []
 
-        # Create FAISS index directory if it doesn't exist
         if not os.path.exists(self.faiss_index_dir):
             os.makedirs(self.faiss_index_dir)
 
-        # Load FAISS index and metadata if they exist, otherwise process documents
         self.load_faiss_index()
         if self.index is None or not self.chunks:
             self.index = faiss.IndexFlatL2(self.embedding_dim)
@@ -73,7 +70,6 @@ class RAGApplication:
             self.save_faiss_index()
 
     def extract_text_from_pdf(self, pdf_path: str) -> str:
-        """Extract text from a PDF file."""
         try:
             reader = PdfReader(pdf_path)
             text = ""
@@ -87,24 +83,19 @@ class RAGApplication:
             return ""
 
     def chunk_text(self, text: str, chunk_size: int = 500) -> List[str]:
-        """Split text into chunks for embedding."""
         words = text.split()
-        chunks = []
-        current_chunk = []
-        current_length = 0
+        chunks, current_chunk, current_length = [], [], 0
         for word in words:
             current_length += len(word) + 1
             current_chunk.append(word)
             if current_length >= chunk_size:
                 chunks.append(" ".join(current_chunk))
-                current_chunk = []
-                current_length = 0
+                current_chunk, current_length = [], 0
         if current_chunk:
             chunks.append(" ".join(current_chunk))
         return chunks
 
     def process_documents(self):
-        """Process all PDFs in the documents directory and store embeddings in FAISS."""
         if not os.path.exists(self.documents_dir):
             print(f"Documents directory {self.documents_dir} not found.")
             return
@@ -113,145 +104,114 @@ class RAGApplication:
             if doc_file.endswith(".pdf"):
                 doc_path = os.path.join(self.documents_dir, doc_file)
                 print(f"Processing document: {doc_path}")
-                
-                # Extract text and chunk it
                 text = self.extract_text_from_pdf(doc_path)
                 if not text:
                     print(f"No text extracted from {doc_path}. Skipping.")
                     continue
-                
                 chunks = self.chunk_text(text)
-                
-                # Generate embeddings
-                embeddings = embedder.encode(chunks)
-                
-                # Store embeddings in FAISS and keep track of chunks/metadata
-                embeddings = np.array(embeddings, dtype=np.float32)
+                embeddings = np.array(embedder.encode(chunks), dtype=np.float32)
                 self.index.add(embeddings)
                 self.chunks.extend(chunks)
                 self.metadata.extend([{"source": doc_file} for _ in chunks])
-                
                 print(f"Stored {len(chunks)} chunks from {doc_file}")
 
     def save_faiss_index(self):
-        """Save the FAISS index and metadata to disk."""
-        # Save the FAISS index
         faiss.write_index(self.index, os.path.join(self.faiss_index_dir, "index.faiss"))
-        
-        # Save chunks and metadata using pickle
         with open(os.path.join(self.faiss_index_dir, "chunks.pkl"), "wb") as f:
             pickle.dump(self.chunks, f)
         with open(os.path.join(self.faiss_index_dir, "metadata.pkl"), "wb") as f:
             pickle.dump(self.metadata, f)
-        print(f"Saved FAISS index and metadata to {self.faiss_index_dir}")
+        print("Saved FAISS index and metadata.")
 
     def load_faiss_index(self):
-        """Load the FAISS index and metadata from disk if they exist."""
-        index_path = os.path.join(self.faiss_index_dir, "index.faiss")
-        chunks_path = os.path.join(self.faiss_index_dir, "chunks.pkl")
-        metadata_path = os.path.join(self.faiss_index_dir, "metadata.pkl")
-
-        if os.path.exists(index_path) and os.path.exists(chunks_path) and os.path.exists(metadata_path):
-            try:
+        try:
+            index_path = os.path.join(self.faiss_index_dir, "index.faiss")
+            chunks_path = os.path.join(self.faiss_index_dir, "chunks.pkl")
+            metadata_path = os.path.join(self.faiss_index_dir, "metadata.pkl")
+            if os.path.exists(index_path) and os.path.exists(chunks_path) and os.path.exists(metadata_path):
                 self.index = faiss.read_index(index_path)
                 with open(chunks_path, "rb") as f:
                     self.chunks = pickle.load(f)
                 with open(metadata_path, "rb") as f:
                     self.metadata = pickle.load(f)
-                print(f"Loaded FAISS index and metadata from {self.faiss_index_dir}")
-            except Exception as e:
-                print(f"Error loading FAISS index: {e}")
-                self.index = None
-                self.chunks = []
-                self.metadata = []
+                print("Loaded FAISS index and metadata.")
+        except Exception as e:
+            print(f"Error loading FAISS index: {e}")
 
     def retrieve_relevant_chunks(self, query: str, top_k: int = 3) -> List[Dict]:
-        """Retrieve relevant document chunks for a given query using FAISS."""
-        # Embed the query
-        query_embedding = embedder.encode([query])[0]
-        query_embedding = np.array([query_embedding], dtype=np.float32)
-        
-        # Search for the top_k nearest neighbors
+        query_embedding = np.array([embedder.encode(query)], dtype=np.float32)
         distances, indices = self.index.search(query_embedding, top_k)
-        
-        # Retrieve the corresponding chunks and metadata
-        retrieved = []
+        results = []
         for idx in indices[0]:
-            if idx < len(self.chunks):  # Ensure index is valid
-                retrieved.append({
+            if idx < len(self.chunks):
+                results.append({
                     "text": self.chunks[idx],
                     "source": self.metadata[idx]["source"]
                 })
-        return retrieved
+        return results
 
     def generate_response(self, query: str) -> tuple[str, List[Dict]]:
-        """Generate a contextual response for the query using retrieved documents."""
-        # Retrieve relevant chunks
         relevant_chunks = self.retrieve_relevant_chunks(query)
         if not relevant_chunks:
-            return "No relevant information found in the documents.", []
+            return "No relevant information found.", []
 
-        # Combine chunks into context
         context = "\n".join([chunk["text"] for chunk in relevant_chunks])
-        
-        # Summarize context using LLM
         try:
             summary = summarizer(context, max_length=150, min_length=30, do_sample=False)[0]['summary_text']
             response = f"Document Insights:\n{summary}"
         except Exception as e:
-            print(f"Error generating summary: {e}")
-            response = "Error generating response. Retrieved context:\n" + context
+            print(f"Summarization error: {e}")
+            response = context[:500]  # fallback
 
-        # Prepare sources for attribution
-        sources = [
-            {"type": "document", "source": chunk["source"], "text": chunk["text"]}
-            for chunk in relevant_chunks
-        ]
+        sources = [{"type": "document", "source": c["source"], "text": c["text"]} for c in relevant_chunks]
         return response, sources
 
-# Main execution for testing the RAG application and database
+
+# === MAIN EXECUTION ===
 if __name__ == "__main__":
-    # Test the database connection (Part 1)
-    print("Testing database connection...")
-    financial_db = FinancialDataDB(db_path="market_data.db")
-    symbols = ['AAPL', 'GOOGL', 'BTC-USD', 'ETH-USD', 'MSFT']
-    for symbol in symbols:
-        data = financial_db.get_stock_data(symbol)
-        print(f"Data for {symbol}: {data}")
+    print("Initializing Financial Data and RAG...")
+    financial_db = FinancialDataDB()
+    rag_app = RAGApplication()
 
-    # Initialize and test the RAG application (Part 2)
-    print("\nTesting RAG application...")
-    rag_app = RAGApplication(documents_dir="Documents", faiss_index_dir="faiss_index")
-
-    # Sample queries to test the RAG system
     sample_queries = [
-        "What does Apple's latest earnings report say about their revenue?",
-        "What are the key points in Apple's 2024 10-K filing?",
-        "How does the financial research paper describe market trends?"
+        "What were Apple’s total revenues and net income for Q2 2025?",
+        "Break down Apple’s Q2 2025 revenue by product category.",
+        "What are Apple’s major operating expenses for Q2 2025?",
+        "How did Apple’s services revenue grow compared to Q2 2024?",
+        "What regions contributed the most to Apple’s revenue in Q2 2025?",
+        "Summarize Apple’s cash flow activities for the first six months of FY25.",
+        "What is Apple’s financial position in terms of assets and liabilities as of Q2 2025?",
+        "What were Apple’s major financing activities in the first half of FY25?",
+        "How much did Apple spend on share repurchases in H1 FY25?",
+        "What does Apple’s earnings per share reveal about their Q2 2025 performance?",
+
+        "What was Alphabet’s total revenue and net income for Q1 2025?",
+        "How did Google Cloud perform financially in Q1 2025?",
+        "What revenue segments does Alphabet report, and how did they trend in Q1 2025?",
+        "What geographic regions drove Alphabet’s Q1 2025 revenue growth?",
+        "How much revenue backlog does Google Cloud have?",
+        "What forward-looking statements did Alphabet include in their 10-Q?",
+        "What are Alphabet’s major cost drivers for Q1 2025?",
+        "What were the significant changes in Alphabet’s cash flow in Q1 2025?",
+        "How much stock did Alphabet repurchase in Q1 2025?",
+        "What trends or risks are highlighted in Alphabet’s Q1 10-Q filing?"
     ]
 
-    # Open a text file to log queries and responses
     log_file_path = "query_log.txt"
-    with open(log_file_path, "a") as log_file:
+    with open(log_file_path, "a", encoding="utf-8") as log_file:
         log_file.write(f"\n=== Query Log - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ===\n")
-        
-        # Test each query and log the results
         for query in sample_queries:
             print(f"\nQuery: {query}")
             response, sources = rag_app.generate_response(query)
             print(f"Response:\n{response}")
-            print("\nSources:")
+            print("Sources:")
             for source in sources:
-                print(f"- Document: {source['source']}\n  Excerpt: {source['text'][:100]}...")
-            
-            # Log to file
-            log_file.write(f"\nQuery: {query}\n")
-            log_file.write(f"Response:\n{response}\n")
-            log_file.write("Sources:\n")
+                print(f"- {source['source']}: {source['text'][:100]}...")
+
+            log_file.write(f"\nQuery: {query}\nResponse:\n{response}\nSources:\n")
             for source in sources:
-                log_file.write(f"- Document: {source['source']}\n  Excerpt: {source['text'][:100]}...\n")
+                excerpt = source['text'][:100].replace('\n', ' ').replace('\r', ' ')
+                log_file.write(f"- {source['source']}: {excerpt}...\n")
             log_file.write("-" * 80 + "\n")
-            
-            print("-" * 80)
-    
-    print(f"Query results saved to {log_file_path}")
+
+    print(f"\nQuery results saved to {log_file_path}")
