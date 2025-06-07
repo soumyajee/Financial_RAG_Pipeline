@@ -1,0 +1,1 @@
+web: uvicorn Fast_api_rag_system:app --host 0.0.0.0 --port $PORT
