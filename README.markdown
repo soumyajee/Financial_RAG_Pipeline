@@ -29,12 +29,12 @@ A production-ready AI system for real-time financial market data analysis and do
 
 4. **Run the FastAPI Backend**:
    ```bash
-   uvicorn main:app --host 0.0.0.0 --port 8000
+   uvicorn Fast_api_rag_system:app --host 0.0.0.0 --port 8000
    ```
 
 5. **Run the Streamlit Web Interface**:
    ```bash
-   streamlit run app.py
+   streamlit run streamlit_ui.py
    ```
    Access at `http://localhost:8501`.
 
